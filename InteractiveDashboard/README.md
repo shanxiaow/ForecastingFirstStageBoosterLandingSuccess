@@ -1,8 +1,44 @@
-Notebook dashboard.ipynb builds an interactive dashboard (with Plotly Dash) for visualization of SpaceX launch records.  
+# SpaceX Launch Dashboard
 
-➡️ User can adjust input to explore the impact of selected factors on mission outcome, e.g. launch site and payload mass.  
+Interactive dashboard built with Dash and Plotly for exploring SpaceX launch outcomes by launch site, payload mass, and booster category.
 
+## Live Dashboard
 
-❣️ Interactive dashboard (not showing on GitHub) can be rendered by other environments, for example:
-https://nbviewer.org/github/shanxiaow/SpaceX-Rocket-Launch/blob/3ee011cd679e78d8f7ecfb963f58a36bbe06e515/InteractiveDashboard/Dashboard.ipynb
+https://huggingface.co/spaces/shannymonte/SpaceLaunchDashboard
 
+## Features
+
+- Interactive launch site filtering
+- Payload mass range filtering
+- Launch success visualization
+- Scatterplot analysis by booster category
+
+## Technologies Used
+
+- Python
+- Dash
+- Plotly
+- Pandas
+
+## Files
+
+- `Dashboard.ipynb` — original notebook development workflow
+- `app.py` — deployable dashboard application
+- `requirements.txt` — project dependencies
+- `spacex_launch_dash.csv` — launch dataset
+
+## Running Locally
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the app:
+
+```bash
+python app.py
+```
+
+Then open the local URL shown in the terminal.
